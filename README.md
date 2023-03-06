@@ -14,7 +14,7 @@ The files and plots can be made by main function:
                    SurvivalData = SurvivalData,
                    Cutoff = 'Mean')`
                    
-An example with downstream analysis can be found in Codes and Example.R file. All returned plots can be found in Keren_Plots directory. The example is for Macrophages as cells of interest from Keren et al. paper:
+An example can be found in Codes directory and Example.R file. All returned plots can be found in Keren_Plots directory. The example is for Macrophages as cells of interest from Keren et al. paper:
 
 Keren L, Bosse M, Marquez D, Angoshtari R, Jain S, Varma S, Yang SR, Kurian A, Van Valen D, West R, Bendall SC, Angelo M. A Structured Tumor-Immune Microenvironment in Triple Negative Breast Cancer Revealed by Multiplexed Ion Beam Imaging. Cell. 2018 Sep 6;174(6):1373-1387.e19. doi: 10.1016/j.cell.2018.08.039. PMID: 30193111; PMCID: PMC6132072.
                    
