@@ -13,7 +13,7 @@
 #'                                                      SurvivalTime, 
 #'                                                      Censored
 #' @Cutoff   A cut off to make binary classification of samples for each clustered cell of interest.
-#'           values: "mean" (default), "median", any numerical value between 0 and 1.
+#'           values: "Mean" (default), "Median", any numerical value between 0 and 1.
                                                  
 
 
