@@ -1,6 +1,6 @@
 
 
-#' Clustering cells of interest across of all samples 
+#' Clustering cells of interest and doing downstream analysis
 
 #' @param FeatureData Dataframe of features returend by ExtractFeatures.R function
 #' @param MainData    Original data, required columns: Sample ID, 
