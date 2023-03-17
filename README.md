@@ -9,7 +9,7 @@ Feature matrix can be extracted by:
 
 The files and plots can be made by main function:
 
-` OutPuts <- locator(FeatureData = KerenFeatures, 
+` OutPuts <- TIMEClust(FeatureData = KerenFeatures, 
                    MainData = Data,
                    SurvivalData = SurvivalData,
                    Cutoff = 'Mean')`
