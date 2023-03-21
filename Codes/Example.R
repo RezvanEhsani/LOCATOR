@@ -9,32 +9,6 @@ rm(list=ls())
 source(".../Codes/ExtractFeatures.R")
 source(".../Codes/Locator.R")
 
-##
-# libraries
-library(data.table)
-library(Rfast)
-library(dplyr)
-library(caramellar)
-library(progressr)
-library(parallel)
-library(tidyverse)
-library(pbmcapply)
-library(Rtsne)
-#
-library(ConsensusClusterPlus)
-library(pals)
-library(pheatmap)
-library(ggalluvial)
-library(ggpubr)
-library(ggrepel) 
-library(RColorBrewer)
-library(NLP)
-#
-library(ggplot2)
-library(ggfortify)
-library(survival)
-library(survminer)
-
 
 #######################################################
 # Main Data must be included below columns:
