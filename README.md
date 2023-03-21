@@ -9,15 +9,7 @@ Feature matrix can be extracted by:
 
 The files and plots can be made by main function:
 
-` 
-> OutPuts <- TIMEClust(FeatureData = KerenFeatures, 
-
-                   MainData = Data,
-                   
-                   SurvivalData = SurvivalData,
-                   
-                   Cutoff = 'Mean')
-                   `
+` > OutPuts <- TIMEClust(FeatureData = KerenFeatures, \n MainData = Data,SurvivalData = SurvivalData, Cutoff = 'Mean')`
                    
 An example can be found in Codes directory and Example.R file. All returned plots can be found in Keren_Plots directory. The example is for Macrophages as cells of interest from Keren et al. paper:
 
