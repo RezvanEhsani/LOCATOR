@@ -25,12 +25,9 @@ DataPath = ".../Data/"
 KerenData <- fread(paste(DataPath,"KerenData.csv",sep=""))
 KerenData <- data.frame(KerenData)
 KerenData <- KerenData[(KerenData$MixingClass!="Cold"),]
-#
-Data = data.frame(KerenData)
-#
-Data = KerenData
+KerenData = data.frame(KerenData)
 
-# Parameters and columns setting
+# Parameters and columns setting for main data
 SampleID_col = 2
 CellID_col = 1
 CellType_col = 6
@@ -44,23 +41,20 @@ Y_col = 5
 r = 100 
 minCount = 10
 ExistingClass_col = 7
-#
 Nseed = 1234
+colnames(KerenData)[SampleID_col] <- "sample_id"
+colnames(KerenData)[CellType_col] <- "CellType"
+colnames(KerenData)[CellID_col] <- "cell_id"
+colnames(KerenData)[MetaCellType_col] <- "MetaCellType"
+colnames(KerenData)[X_col] <- "Pos_X"
+colnames(KerenData)[Y_col] <- "Pos_Y"
 
-colnames(Data)[SampleID_col] <- "sample_id"
-colnames(Data)[CellType_col] <- "CellType"
-colnames(Data)[CellID_col] <- "cell_id"
-colnames(Data)[MetaCellType_col] <- "MetaCellType"
-colnames(Data)[X_col] <- "Pos_X"
-colnames(Data)[Y_col] <- "Pos_Y"
-#
+# Parameters and columns setting for Survival data
 SurvivalSampleID_col = 1
 SurvivalTime_col = 2
 SurvivalCensored_col = 3
-#
 KerenSurvival <- fread(paste(DataPath,"KerenSurvival.csv",sep=""))
 SurvivalData <- data.frame(KerenSurvival)
-#
 colnames(SurvivalData)[SurvivalSampleID_col] <- "sample_id"
 colnames(SurvivalData)[SurvivalTime_col] <- "SurvivalTime"
 colnames(SurvivalData)[SurvivalCensored_col] <- "Censored"
@@ -74,7 +68,7 @@ colnames(SurvivalData)[SurvivalCensored_col] <- "Censored"
 
 start_time <- Sys.time()
 
-KerenFeatures <- Extract_Features(Data = Data)
+KerenFeatures <- Extract_Features(Data = KerenData)
 
 end_time <- Sys.time()
 print(end_time - start_time)
@@ -90,7 +84,7 @@ print(end_time - start_time)
 start_time <- Sys.time()
 
 OutPuts <- TIMEClust(FeatureData = KerenFeatures, 
-                   MainData = Data,
+                   MainData = KerenData,
                    SurvivalData = SurvivalData,
                    Cutoff = 'Mean')
 
