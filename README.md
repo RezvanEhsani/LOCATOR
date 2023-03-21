@@ -34,3 +34,6 @@ This project is licensed under the MIT License.
 Copyright 2022 Department of Informatics, University of Bergen (UiB) and the Centre of Cancer Biomarkers (CCBIO), Norway
 
 You may only use the source code in this repository in compliance with the license provided in this repository. For more details, please refer to the file named "LICENSE.md".
+
+# Contact
+Comments and bug reports are welcome, please email: Rezvan Ehsani (rezvan.ehsani@uib.no) We are also interested to know about how you have used our source code, including any improvements that you have implemented.You are free to modify, extend or distribute our source code, as long as our copyright notice remains unchanged and included in its entirety.
