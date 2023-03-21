@@ -90,7 +90,7 @@ print(end_time - start_time)
 
 # 
 start_time <- Sys.time()
-OutPuts <- locator(FeatureData = KerenFeatures, 
+OutPuts <- TIMEClust(FeatureData = KerenFeatures, 
                    MainData = Data,
                    SurvivalData = SurvivalData,
                    Cutoff = 'Mean')
