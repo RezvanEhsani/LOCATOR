@@ -19,7 +19,8 @@ An example can be found in Codes directory and Example.R file. All returned plot
 Keren L, Bosse M, Marquez D, Angoshtari R, Jain S, Varma S, Yang SR, Kurian A, Van Valen D, West R, Bendall SC, Angelo M. A Structured Tumor-Immune Microenvironment in Triple Negative Breast Cancer Revealed by Multiplexed Ion Beam Imaging. Cell. 2018 Sep 6;174(6):1373-1387.e19. doi: 10.1016/j.cell.2018.08.039. PMID: 30193111; PMCID: PMC6132072.
                    
 # Dependencies and System Requirements
-LOCATOR is developed with 4.2.2 (2022-10-31 ucrt)
+LOCATOR is developed with R 4.2.2 (2022-10-31 ucrt)
 
 The analysis presented in our publication requires packages to be installed, and we refer to the following document about the R session info.
+
 ` mySessionConfig.sh`
