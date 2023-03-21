@@ -5,6 +5,7 @@ We developed a novel computational method, LOCATOR (anaLysis Of CAncer Tissue mi
 # LOCATOR's functions
 
 Before using LOCATOR's functions, some parameters setting are required. Please see the Example.R code in Codes directory for more information. 
+
 Feature matrix can be extracted by:
 
 ` > FeatureData <- Extract_Features(Data = MainData)`
