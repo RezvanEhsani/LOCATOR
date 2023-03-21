@@ -37,15 +37,23 @@
 #'                     SurvivalData = SurvivalData,
 #'                     Cutoff = 'Mean')
 
-
+# libraries
+library(ConsensusClusterPlus)
+library(pheatmap)
+library(ggalluvial)
+library(ggpubr)
+library(ggrepel) 
+library(Rtsne)
+library(ggplot2)
+library(ggfortify)
+library(survival)
+library(survminer)
 
 # Set some color
 Cell_Colors <- c('#042ff2', '#fa1203', '#b27002', '#0285a2',
                  '#fe8d0d', '#119411', '#6f00e5', '#1cf7fe', 
                  '#6c84f2', '#bdbd38', '#03c403', '#006ce5', 
                  '#cb9dfc', '#bf05e8', '#02a288', '#768d22')
-
-
 
 alluvium_func <- function(Dat, ExistClassName, j){
   
@@ -74,10 +82,10 @@ alluvium_func <- function(Dat, ExistClassName, j){
 }
 
 #Main function
-locator <- function(FeatureData,
-                    MainData,
-                    SurvivalData,
-                    Cutoff = 'Mean'){
+TIMEClust <- function(FeatureData,
+                      MainData,
+                      SurvivalData,
+                      Cutoff = 'Mean'){
     
     NCellTypes <- length(unique(MainData$CellType))
     Nfeatues <- 6 + 2*NCellTypes + 12 # 6 circel information + celltypes + connectivity of cell types + 12 graph features
