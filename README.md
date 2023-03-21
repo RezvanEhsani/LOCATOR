@@ -24,3 +24,10 @@ LOCATOR is developed with R 4.2.2 (2022-10-31 ucrt)
 The analysis presented in our publication requires packages to be installed, and we refer to the following document about the R session info.
 
 ` mySessionConfig.sh`
+
+# License
+This project is licensed under the MIT License.
+
+Copyright 2022 Department of Informatics, University of Bergen (UiB) and the Centre of Cancer Biomarkers (CCBIO), Norway
+
+You may only use the source code in this repository in compliance with the license provided in this repository. For more details, please refer to the file named "LICENSE.md".
