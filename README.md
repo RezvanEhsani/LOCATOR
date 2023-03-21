@@ -3,6 +3,8 @@
 We developed a novel computational method, LOCATOR (anaLysis Of CAncer Tissue micrOenviRonment), for spatial analysis of cancer microenvironments using data acquired from mass cytometry imaging (MCI) technologies.  LOCATOR introduces a graph-based representation of tissue images to describe features of the cellular organisation and deploys downstream analysis and visualisation utilities that can be used for data-driven patient risk stratification. Our case study using MCI data from two well-annotated breast cancer cohorts re-confirmed that the spatial organisation of the tumour-immune microenvironment is strongly associated with the clinical outcome in breast cancer. In addition, we report interesting potential associations between the cellular organization of macrophages and patients’ survival.  Our work introduces an automated and versatile analysis framework for MCI data with many applications in future cancer research projects.
 
 # LOCATOR's functions
+
+Before using LOCATOR's functions, some parameters setting are required. Please see the Example.R code in Codes directory for more information. 
 Feature matrix can be extracted by:
 
 ` > FeatureData <- Extract_Features(Data = MainData)`
