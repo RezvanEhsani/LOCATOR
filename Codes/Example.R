@@ -30,7 +30,7 @@ Data = data.frame(KerenData)
 #
 Data = KerenData
 
-# Set parameters and identify columns 
+# Parameters and columns setting
 SampleID_col = 2
 CellID_col = 1
 CellType_col = 6
@@ -46,10 +46,6 @@ minCount = 10
 ExistingClass_col = 7
 #
 Nseed = 1234
-
-#Number of Cell types in Data
-NCellTypes <- 11
-#
 
 colnames(Data)[SampleID_col] <- "sample_id"
 colnames(Data)[CellType_col] <- "CellType"
@@ -77,7 +73,9 @@ colnames(SurvivalData)[SurvivalCensored_col] <- "Censored"
 ##########################################################
 
 start_time <- Sys.time()
-KerenFeatures <- Extract_Features(Data  = Data)
+
+KerenFeatures <- Extract_Features(Data = Data)
+
 end_time <- Sys.time()
 print(end_time - start_time)
 
@@ -90,10 +88,12 @@ print(end_time - start_time)
 
 # 
 start_time <- Sys.time()
+
 OutPuts <- TIMEClust(FeatureData = KerenFeatures, 
                    MainData = Data,
                    SurvivalData = SurvivalData,
                    Cutoff = 'Mean')
+
 end_time <- Sys.time()
 print(end_time - start_time)
 
