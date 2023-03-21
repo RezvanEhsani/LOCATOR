@@ -1,21 +1,22 @@
 # LOCATOR: anaLysis Of CAncer Tissue micrOenviRonment
 
+We developed a novel computational method, LOCATOR (anaLysis Of CAncer Tissue micrOenviRonment), for spatial analysis of cancer microenvironments using data acquired from mass cytometry imaging (MCI) technologies.  LOCATOR introduces a graph-based representation of tissue images to describe features of the cellular organisation and deploys downstream analysis and visualisation utilities that can be used for data-driven patient risk stratification. Our case study using MCI data from two well-annotated breast cancer cohorts re-confirmed that the spatial organisation of the tumour-immune microenvironment is strongly associated with the clinical outcome in breast cancer. I addition, we report interesting potential associations between the cellular organization of macrophages and patients’ survival.  Our work introduces an automated and versatile analysis framework for MCI data with many applications in future cancer research projects.
 
-The goal of LOCATOR is to identify subsets of interest cells based on their spatial local microenvironment organization, and find potential clinical and biological associations among the samples which are enriched or decreased for a specific subtype of these interest cells.
-
+# LOCATOR's functions
 Feature matrix can be extracted by:
 
-` > ExtractFeatures.R`
+` > FeatureData <- Extract_Features(Data = MainData)`
 
 The files and plots can be made by main function:
 
 ```
-> OutPuts <- TIMEClust(FeatureData = KerenFeatures, 
-                       MainData = Data,
+> OutPuts <- TIMEClust(FeatureData = FeatureData, 
+                       MainData = MainData,
                        SurvivalData = SurvivalData,
                        Cutoff = 'Mean')
 ```
-                   
+           
+# Example
 An example can be found in Codes directory and Example.R file. All returned plots can be found in Keren_Plots directory. The example is for Macrophages as cells of interest from Keren et al. paper:
 
 Keren L, Bosse M, Marquez D, Angoshtari R, Jain S, Varma S, Yang SR, Kurian A, Van Valen D, West R, Bendall SC, Angelo M. A Structured Tumor-Immune Microenvironment in Triple Negative Breast Cancer Revealed by Multiplexed Ion Beam Imaging. Cell. 2018 Sep 6;174(6):1373-1387.e19. doi: 10.1016/j.cell.2018.08.039. PMID: 30193111; PMCID: PMC6132072.
