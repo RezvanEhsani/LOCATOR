@@ -1,4 +1,19 @@
+#BEGIN COPYRIGHT NOTICE
 
+#TIMEClust -- (c) 2023 Rezvan Ehsani -- UiB and CCBIO
+#Copyright 2022 University of Bergen (UiB), Norway.
+#This Program is free software licensed under the MIT License.
+#You may only use the source code in this repository in compliance with the license provided in this repository. 
+#For more details, please refer to the file named "LICENSE.md".
+#This Program is distributed as a service to the research community and is experimental in nature and may have hazardous properties. 
+#The Program is distributed WITHOUT ANY WARRANTY, express or implied. In particular all warranties as to SATISFACTORY QUALITY or FITNESS FOR A PARTICULAR PURPOSE are excluded. 
+#Published reports of research using this code (or a modified version) should cite the relevant article of this code
+#Comments and bug reports are welcome.
+#Email to rezvan.ehsani@uib.no
+#I would also appreciate hearing about how you used this code, improvements that you have made to it.
+#You are free to modify, extend or distribute this code, as long as this copyright notice is included whole and unchanged. 
+
+#END COPYRIGHT NOTICE
 
 #' Clustering cells of interest and doing downstream analysis
 
