@@ -84,7 +84,7 @@ print(end_time - start_time)
 
 ##########################################################
 #                                                        #
-#            Run main function "locator"                 #
+#            Run main function "TIMEClust"               #
 #                                                        #
 ##########################################################
 
