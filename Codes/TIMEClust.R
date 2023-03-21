@@ -38,7 +38,8 @@
 #'                     Cutoff = 'Mean')
 
 # libraries
-library(ConsensusClusterPlus)
+library(Spectre)
+library(NLP)
 library(pheatmap)
 library(ggalluvial)
 library(ggpubr)
