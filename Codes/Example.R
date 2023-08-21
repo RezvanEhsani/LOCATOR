@@ -9,16 +9,22 @@ rm(list=ls())
 source(".../Codes/ExtractFeatures.R")
 source(".../Codes/Locator.R")
 
+#######################################################################################################
+# If the input Data is a 'SpatialExperiment' object (spe), First user has to convert it as a dataframe:
+# df_counts <- as.data.frame(as.matrix(t(counts(spe))))
+# df_colData <- as.data.frame(as.matrix(colData(spe)))
+# df_coords <- as.data.frame(as.matrix(spatialCoords(spe)))
+# Data <- cbind(df_colData, df_counts, df_coords)
 
 #######################################################
 # Main Data must be included below columns:
-#  - Image ID
-#  - cell ID
-#  - celltype names
-#  - X position
-#  - Y position
-#  - Meta celltype (1 if cell is tumor and 0 otherwise)
-#  - ExistingClasses (if there are any)
+#  - Image ID (string or integer)
+#  - cell ID (integer)
+#  - celltype names (string)
+#  - X position (float)
+#  - Y position (float)
+#  - Meta celltype (binary: 1 if cell is tumor and 0 otherwise)
+#  - ExistingClasses (if there are any such as:Survival or PAM50 data)
 
 DataPath = ".../Data/"
 
