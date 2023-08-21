@@ -24,7 +24,7 @@ source(".../Codes/Locator.R")
 #  - X position (float)
 #  - Y position (float)
 #  - Meta celltype (binary: 1 if cell is tumor and 0 otherwise)
-#  - ExistingClasses (if there are any such as:Survival or PAM50 data)
+#  - ExistingClasses (if there are any such as: Survival or PAM50 data)
 
 DataPath = ".../Data/"
 
