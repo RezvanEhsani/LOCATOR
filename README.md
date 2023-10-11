@@ -43,6 +43,9 @@ Comments and bug reports are welcome, please email: Rezvan Ehsani (rezvan.ehsani
 
 # Publication
 Article: LOCATOR: feature extraction and spatial analysis of the cancer tissue microenvironment using mass cytometry imaging technologies
+
 DOI: 10.1093/bioadv/vbad146
+
 Journal: Bioinformatics Advances
+
 Pre-print available at bioRxiv
