@@ -40,3 +40,9 @@ You may only use the source code in this repository in compliance with the licen
 
 # Contact
 Comments and bug reports are welcome, please email: Rezvan Ehsani (rezvan.ehsani@uib.no). We are also interested to know about how you have used our source code, including any improvements that you have implemented. You are free to modify, extend or distribute our source code, as long as our copyright notice remains unchanged and included in its entirety.
+
+# Publication
+Article: LOCATOR: feature extraction and spatial analysis of the cancer tissue microenvironment using mass cytometry imaging technologies
+DOI: 10.1093/bioadv/vbad146
+Journal: Bioinformatics Advances
+Pre-print available at bioRxiv
