@@ -185,7 +185,9 @@ getGraphProperties <- function(dt){
         Dat_MAP2 <- dt[,c("P2","CellType2")]
         map = setNames(c(Dat_MAP1$CellType1, Dat_MAP2$CellType2) , c(Dat_MAP1$P1, Dat_MAP2$P2))
         V(g)$label <- unname(map[V(g)$name])
-        freqs <- table(V(g)$label)/length(V(g)$label)
+        t <- table(table(V(g)$label))
+        freqs <- t/sum(t)
+        freqs[freqs==0] <- 1
         Entropy <- -sum(freqs * log2(freqs))
 
         #
